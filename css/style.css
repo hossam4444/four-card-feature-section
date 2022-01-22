@@ -1,0 +1,133 @@
+/* ¯\_(ツ)_/¯ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%); 
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+.container {
+  padding: 30px;
+}
+@media (max-width:350px) {
+  .container {
+    padding: 20px 10px;
+  }
+}
+.container p {
+  color: var(--Grayish-Blue);
+  line-height: 1.8;
+}
+.container .intro {
+  text-align: center;
+  max-width: 35em;
+  margin: 0 auto;
+}
+.container .intro .reg {
+  margin: 0;
+  font-weight: lighter;
+}
+.container .intro .bol {
+  margin: 0 ;
+}
+.container .intro p {
+  font-size: 17px;
+}
+.container .cards {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: 
+    ". team ."
+  "sup team calc"
+  "sup karma calc"
+    ". karma .";
+  gap: 30px;
+}
+@media (max-width:1330px) {
+  .container .cards {
+    grid-template-areas: 
+  "sup team "
+  "sup team "
+  "karma calc"
+  "karma calc";
+  }
+}
+@media (max-width:767px) {
+  .container .cards {
+    grid-template-areas: 
+  "sup"
+  "team"
+  "karma"
+  "calc";
+  }
+}
+.container .cards .col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .cards .card {
+  background-color: white;
+  padding: 30px;
+  min-width: 300px;
+  max-width: 27em;
+  border-radius: 8px;
+  border-top: 5px solid;
+  box-shadow: 2px 2px 20px 0px rgb(0 0 0 / 30%);
+}
+@media (max-width:767px) {
+  .container .cards .card {
+    min-width: 0;
+  }
+}
+.container .cards .card h3 {
+  margin: 0;
+}
+.container .cards .card p {
+  margin-bottom: 30px;
+}
+.container .cards .card .ico {
+  display: flex;
+  justify-content: end;
+}
+.container .cards .Supervisor {
+  border-top-color: var(--Cyan);
+  grid-area: sup;
+}
+.container .cards .Team {
+  border-top-color: var(--red);
+  grid-area: team;
+}
+.container .cards .Karma {
+  border-top-color: var(--Orange);
+  grid-area: karma;
+}
+.container .cards .Calculator {
+  border-top-color: var(--Blue);
+  grid-area: calc;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
