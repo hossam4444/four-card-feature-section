@@ -1,21 +1,15 @@
-# the composer package lock file and install directory
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# /composer.lock
-/fuel/vendor
+# Avoid accidental Sketch file upload 
+###############################################
+## Please do not remove line 5 - thanks! 🙂 ##
+###############################################
+*.sketch
 
-# the fuelphp document
-/docs/
+# Avoid accidental XD or Figma upload if you convert the design file
+#######################################################
+## Please do not remove lines 11 and 12 - thanks! 🙂 ##
+#######################################################
+*.xd
+*.fig
 
-# you may install these packages with `oil package`.
-# http://fuelphp.com/docs/packages/oil/package.html
-# /fuel/packages/auth/
-# /fuel/packages/email/
-# /fuel/packages/oil/
-# /fuel/packages/orm/
-# /fuel/packages/parser/
-
-# dynamically generated files
-/fuel/app/logs/*/*/*
-/fuel/app/cache/*/*
-/fuel/app/config/crypt.php
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
